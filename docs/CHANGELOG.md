@@ -20,3 +20,8 @@
 - USA landing shows Appalachia, NY, PA only.
 - Add watershed, valley, ridge geographic context and state breadcrumbs.
 - External backups; auto-ignore previous deployment backup residue without hiding other changes.
+
+## v0.3.4 — AA adapter boundary
+- Added non-operational ScholarFlow AA integration contract, role policy and safe gamified access preview.
+- No new identity store, secrets, demo passwords, or public content changes.
+- External backup and guarded cumulative deploy.
