@@ -1,5 +1,5 @@
-# Native Nations Atlas v0.3.2
+# Native Nations Atlas v0.3.3
 
-Cumulative Pan-American atlas with location-specific color atmospheres, abstract landform decorations, consistent Liquid Live tiles and accessible responsive styling. Earlier releases preserved in legacy.
+Cumulative release correcting USA → state → local region navigation. Appalachia remains a cross-state geographic region. Adds terrain/watershed context and fixes deployment backup residue.
 
-Deploy after v0.3.1 using `bash bin/deploy.sh`. Requires authenticated `gh`, git and python3. No GitHub changes occur until the user runs it.
+Run `bash bin/deploy.sh` after extraction. Requires v0.3.2 repository baseline; does not skip releases.

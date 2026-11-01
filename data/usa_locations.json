@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.1",
+  "version": "v0.3.3",
   "editorial_status": "unverified geographic research scaffolds",
   "locations": [
     {
@@ -274,5 +274,6 @@
         "Research sources, attribution and corrections"
       ]
     }
-  ]
+  ],
+  "navigation_rule": "State children appear on state landing pages; multi-state regions appear at USA level and may cross-link to states."
 }

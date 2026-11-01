@@ -14,3 +14,9 @@
 - Coherent page-specific landscape palettes and decorative atmospheres.
 - Unified cards, accessible focus, reduced-motion and responsive mobile layouts.
 - No unlicensed or invented Indigenous cultural motifs.
+
+## v0.3.3
+- Nest NY and PA local tiles under respective state landing pages.
+- USA landing shows Appalachia, NY, PA only.
+- Add watershed, valley, ridge geographic context and state breadcrumbs.
+- External backups; auto-ignore previous deployment backup residue without hiding other changes.
