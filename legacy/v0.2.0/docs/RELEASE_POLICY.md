@@ -1,0 +1,2 @@
+# Incremental release contract
+Every release is cumulative and additive by default. Preserve prior validated content, legacy prototypes and provenance. Never force-push, overwrite tags, delete existing files, or replace edited files silently. Require explicit human review for cultural knowledge and geolocation precision. Future deployers must run validation before commit/push, create immutable version tags and verify remote release assets.

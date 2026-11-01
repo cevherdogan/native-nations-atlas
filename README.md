@@ -1,4 +1,4 @@
-# Native Nations Atlas · v0.2.0
+# Native Nations Atlas · v0.2.1
 
 Pan-American scope: Alaska, Canada, the United States, Mexico, Central America, the Caribbean and South America. Includes living Indigenous peoples and communities; geographic sections are navigation aids rather than assertions of identity or borders.
 
@@ -16,3 +16,6 @@ Extract the ZIP and run `bash bin/deploy.sh` on a Mac with `git`, `gh`, Python 3
 
 ## Scope limitations
 The atlas is a structured research starter, not a completed directory. GitHub publication requires user-side authenticated CLI access.
+
+## Visual update
+Liquid animated, color-distinct backgrounds on all region and theme tiles. No external image downloads or cultural motifs are used.

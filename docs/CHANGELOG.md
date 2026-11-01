@@ -9,3 +9,8 @@
 
 ## v0.1.0
 - Initial US-oriented research atlas architecture.
+
+## v0.2.1
+- Animated liquid-glass tile backgrounds with distinct palettes and icons for all regions and themes.
+- Responsive mobile layout and reduced-motion accessibility.
+- Preserved v0.2.0 under legacy/v0.2.0.
