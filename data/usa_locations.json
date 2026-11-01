@@ -1,0 +1,278 @@
+{
+  "version": "v0.3.1",
+  "editorial_status": "unverified geographic research scaffolds",
+  "locations": [
+    {
+      "id": "appalachian",
+      "name": "Appalachian Region",
+      "description": "Entire Appalachian mountain system, spanning multiple states; not a single tribal territory.",
+      "parent": "usa",
+      "tags": [
+        "Cherokee",
+        "Haudenosaunee",
+        "Shawnee",
+        "Lenape",
+        "Monacan"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "description": "Statewide navigation; historical and contemporary Indigenous presence.",
+      "parent": "usa",
+      "tags": [
+        "Haudenosaunee",
+        "Lenape",
+        "Mohican"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-corning",
+      "name": "Corning / Finger Lakes",
+      "description": "Southern Finger Lakes and Chemung River corridor.",
+      "parent": "new-york",
+      "tags": [
+        "Haudenosaunee",
+        "Seneca"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-staten-island",
+      "name": "Staten Island",
+      "description": "New York Harbor and Staten Island; investigate Lenape histories and present-day connections.",
+      "parent": "new-york",
+      "tags": [
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-long-island",
+      "name": "Long Island",
+      "description": "Long Island and adjacent coastal waters; communities are distinct, not interchangeable.",
+      "parent": "new-york",
+      "tags": [
+        "Shinnecock",
+        "Unkechaug",
+        "Montaukett"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-catskills",
+      "name": "Catskill Mountains",
+      "description": "Catskill landscapes and watersheds; avoid treating modern tourism borders as ancestral boundaries.",
+      "parent": "new-york",
+      "tags": [
+        "Mohican",
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-bear-mountain",
+      "name": "Bear Mountain / Hudson Highlands",
+      "description": "Hudson Highlands and Bear Mountain area; public heritage interpretation and land histories.",
+      "parent": "new-york",
+      "tags": [
+        "Lenape",
+        "Munsee"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-woodstock",
+      "name": "Woodstock / Ulster County",
+      "description": "Woodstock and surrounding Ulster County.",
+      "parent": "new-york",
+      "tags": [
+        "Lenape",
+        "Esopus",
+        "Mohican"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "ny-albany-troy",
+      "name": "Albany / Troy / Capital Region",
+      "description": "Upper Hudson and Mohawk River confluence; overlapping historic connections.",
+      "parent": "new-york",
+      "tags": [
+        "Mohican",
+        "Mohawk"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "pennsylvania",
+      "name": "Pennsylvania",
+      "description": "Statewide navigation with Indigenous continuity and diaspora.",
+      "parent": "usa",
+      "tags": [
+        "Lenape",
+        "Susquehannock",
+        "Shawnee"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "pa-valley-forge",
+      "name": "Valley Forge / Schuylkill Valley",
+      "description": "Valley Forge and Schuylkill Valley; distinguish park interpretation from wider Indigenous histories.",
+      "parent": "pennsylvania",
+      "tags": [
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "pa-lancaster",
+      "name": "Lancaster County",
+      "description": "Conestoga and Susquehanna watershed context; historic and living communities distinguished.",
+      "parent": "pennsylvania",
+      "tags": [
+        "Susquehannock",
+        "Conestoga",
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "pa-philadelphia",
+      "name": "Philadelphia / Delaware Valley",
+      "description": "Philadelphia and Delaware River watershed; living Lenape connections.",
+      "parent": "pennsylvania",
+      "tags": [
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    },
+    {
+      "id": "pa-pittsburgh",
+      "name": "Pittsburgh / Three Rivers",
+      "description": "Allegheny, Monongahela and Ohio confluence; multi-nation histories.",
+      "parent": "pennsylvania",
+      "tags": [
+        "Seneca",
+        "Shawnee",
+        "Lenape"
+      ],
+      "verification": "research leads — not validated nation-to-place assertions",
+      "sections": [
+        "Living nations and community-authored accounts",
+        "Ancestral landscapes and historical context",
+        "Museums, public heritage sites and collections",
+        "Languages, dialects and revitalization",
+        "Public arts, music, gatherings and events",
+        "Research sources, attribution and corrections"
+      ]
+    }
+  ]
+}

@@ -1,14 +1,5 @@
-# Native Nations Atlas v0.3.0 — Resource Depth & Cross-Reference Edition
+# Native Nations Atlas v0.3.1
 
-Cumulative update from v0.2.1: 22 linked research subpages, responsive liquid tiles, A–Z index, tags, contextual related resources, machine-readable resource registry and preserved legacy snapshots. All content currently comprises research scaffolds, **not verified profiles or event listings**.
+Cumulative release based on v0.3.0. Adds USA location-bound exploration for Appalachia, NY and PA, 14 research scaffold pages and JSON registry. No unverified place-to-nation associations are represented as established fact.
 
-## Mac install
-
-```bash
-cd ~/Downloads/native-nations-atlas-v0.3.0
-bash bin/deploy.sh
-```
-
-Target: `~/github/native-nations-atlas`. Requires `git`, authenticated `gh`, and Python 3. No destructive overwrites: dirty repos or divergent tracked baselines abort before installation. Deployment requires remote connectivity and is not yet verified here.
-
-Open `app/index.html` to explore offline. `data/resources.json` provides the record model for future source-backed profiles. See `docs/EDITORIAL_POLICY.md`.
+Deploy: `bash bin/deploy.sh` after extracting. Requires clean v0.3.0 on main, git, gh authentication, and Python 3. Deployment is not performed by this package.
