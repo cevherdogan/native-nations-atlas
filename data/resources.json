@@ -1,0 +1,675 @@
+{
+  "version": "0.3.0",
+  "records": [
+    {
+      "id": "region-1",
+      "type": "region",
+      "title": "Arctic & Subarctic",
+      "summary": "Alaska, northern Canada, Greenland (geographic context)",
+      "region": "1",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "arctic---subarctic-region-1",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-2",
+      "type": "region",
+      "title": "Canada",
+      "summary": "First Nations, Inuit, Métis and distinct communities",
+      "region": "2",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "canada-region-2",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-3",
+      "type": "region",
+      "title": "United States",
+      "summary": "Tribal nations, Alaska Native communities and Native Hawaiian distinction",
+      "region": "3",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "united-states-region-3",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-4",
+      "type": "region",
+      "title": "Mexico",
+      "summary": "Indigenous nations and communities across Mexico",
+      "region": "4",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "mexico-region-4",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-5",
+      "type": "region",
+      "title": "Central America",
+      "summary": "Belize, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama",
+      "region": "5",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "central-america-region-5",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-6",
+      "type": "region",
+      "title": "Caribbean",
+      "summary": "Indigenous continuity and diasporas across the Caribbean",
+      "region": "6",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "caribbean-region-6",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-7",
+      "type": "region",
+      "title": "Andean South America",
+      "summary": "Colombia, Ecuador, Peru, Bolivia, Chile, Argentina",
+      "region": "7",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "andean-south-america-region-7",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-8",
+      "type": "region",
+      "title": "Amazonia & Guianas",
+      "summary": "Amazon basin, Brazil, Venezuela, Guyana, Suriname, French Guiana",
+      "region": "8",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "amazonia---guianas-region-8",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "region-9",
+      "type": "region",
+      "title": "Southern Cone",
+      "summary": "Paraguay, Uruguay, Argentina, Chile and neighboring territories",
+      "region": "9",
+      "tags": [
+        "geography",
+        "homelands",
+        "communities"
+      ],
+      "status": "taxonomy",
+      "topics": [
+        "Overview",
+        "Living communities",
+        "Homelands and boundaries",
+        "Languages",
+        "Museums and public sites",
+        "Events",
+        "Research questions"
+      ],
+      "slug": "southern-cone-region-9",
+      "related": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4",
+        "theme-5",
+        "theme-6"
+      ]
+    },
+    {
+      "id": "theme-1",
+      "type": "theme",
+      "title": "Nations & living communities",
+      "summary": "Research pathway for nations & living communities across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "nations---living-communities"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "nations---living-communities-theme-1",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-2",
+      "type": "theme",
+      "title": "Land, territories & treaties",
+      "summary": "Research pathway for land, territories & treaties across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "land--territories---treaties"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "land--territories---treaties-theme-2",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-3",
+      "type": "theme",
+      "title": "Villages & public access",
+      "summary": "Research pathway for villages & public access across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "villages---public-access"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "villages---public-access-theme-3",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-4",
+      "type": "theme",
+      "title": "Museums & cultural centers",
+      "summary": "Research pathway for museums & cultural centers across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "museums---cultural-centers"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "museums---cultural-centers-theme-4",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-5",
+      "type": "theme",
+      "title": "Public events & calendars",
+      "summary": "Research pathway for public events & calendars across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "public-events---calendars"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "public-events---calendars-theme-5",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-6",
+      "type": "theme",
+      "title": "Languages, varieties & dialects",
+      "summary": "Research pathway for languages, varieties & dialects across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "languages--varieties---dialects"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "languages--varieties---dialects-theme-6",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-7",
+      "type": "theme",
+      "title": "Public spirituality & worldviews",
+      "summary": "Research pathway for public spirituality & worldviews across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "public-spirituality---worldviews"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "public-spirituality---worldviews-theme-7",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-8",
+      "type": "theme",
+      "title": "Art, adornment & regalia",
+      "summary": "Research pathway for art, adornment & regalia across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "art--adornment---regalia"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "art--adornment---regalia-theme-8",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-9",
+      "type": "theme",
+      "title": "Music & oral traditions",
+      "summary": "Research pathway for music & oral traditions across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "music---oral-traditions"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "music---oral-traditions-theme-9",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-10",
+      "type": "theme",
+      "title": "Foodways & ecology",
+      "summary": "Research pathway for foodways & ecology across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "foodways---ecology"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "foodways---ecology-theme-10",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-11",
+      "type": "theme",
+      "title": "History & primary sources",
+      "summary": "Research pathway for history & primary sources across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "history---primary-sources"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "history---primary-sources-theme-11",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-12",
+      "type": "theme",
+      "title": "Governance & self-determination",
+      "summary": "Research pathway for governance & self-determination across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "governance---self-determination"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "governance---self-determination-theme-12",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    },
+    {
+      "id": "theme-13",
+      "type": "theme",
+      "title": "Research provenance & corrections",
+      "summary": "Research pathway for research provenance & corrections across the Americas.",
+      "region": null,
+      "tags": [
+        "culture",
+        "research",
+        "research-provenance---corrections"
+      ],
+      "status": "framework",
+      "topics": [
+        "Scope and definitions",
+        "Regional variations",
+        "Contemporary practice",
+        "Primary sources",
+        "Ethical research and permissions",
+        "Open questions"
+      ],
+      "slug": "research-provenance---corrections-theme-13",
+      "related": [
+        "region-1",
+        "region-2",
+        "region-3",
+        "region-4",
+        "region-5",
+        "region-6"
+      ]
+    }
+  ],
+  "note": "Taxonomy and research prompts, not verified Indigenous nation profiles."
+}

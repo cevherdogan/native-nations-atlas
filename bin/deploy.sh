@@ -1,57 +1,43 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-VERSION=v0.2.1
+VERSION=v0.3.0
 REPO="${ATLAS_REPO:-cevherdogan/native-nations-atlas}"
 DEST="${ATLAS_DEST:-$HOME/github/native-nations-atlas}"
-VISIBILITY="${ATLAS_VISIBILITY:-public}"
-command -v git >/dev/null || { echo 'Install git'; exit 1; }
-command -v gh >/dev/null || { echo 'Install GitHub CLI (gh)'; exit 1; }
-gh auth status >/dev/null || { echo 'Authenticate: gh auth login'; exit 1; }
-python3 "$ROOT/tests/validate_v021.py" "$ROOT"
-if [[ -e "$DEST" && ! -d "$DEST/.git" ]]; then echo "Refusing non-git destination: $DEST"; exit 1; fi
-if [[ -d "$DEST/.git" ]]; then
-  [[ -z "$(git -C "$DEST" status --porcelain)" ]] || { echo 'Refusing dirty checkout'; exit 1; }
-  git -C "$DEST" fetch --tags origin
-  [[ "$(git -C "$DEST" rev-list --count HEAD..origin/main 2>/dev/null || echo 0)" == 0 ]] || { echo 'Remote ahead: pull/reconcile first'; exit 1; }
-else
-  mkdir -p "$(dirname "$DEST")"
-  if gh repo view "$REPO" >/dev/null 2>&1; then gh repo clone "$REPO" "$DEST"; else
-    mkdir -p "$DEST"; git -C "$DEST" init -b main
-    gh repo create "$REPO" "--$VISIBILITY" --description 'Native Nations Atlas: living Indigenous nations, cultures and homelands' --confirm
-    git -C "$DEST" remote add origin "https://github.com/$REPO.git"
-  fi
-fi
-if git -C "$DEST" rev-parse "$VERSION" >/dev/null 2>&1 || gh release view "$VERSION" --repo "$REPO" >/dev/null 2>&1; then echo "Tag/release $VERSION exists; refusing overwrite"; exit 1; fi
-# Only upgrade files matching the archived v0.1.0 baseline; refuse divergent local customizations.
-for rel in README.md app/index.html bin/deploy.sh docs/CHANGELOG.md data/atlas.json; do
-  if [[ -e "$DEST/$rel" && ! -z "$(git -C "$DEST" rev-parse HEAD 2>/dev/null || true)" ]]; then
-    if ! cmp -s "$DEST/$rel" "$ROOT/legacy/v0.2.0/$rel" && ! cmp -s "$DEST/$rel" "$ROOT/$rel"; then
-      echo "Customized file differs from baseline: $rel; refusing overwrite"; exit 1
-    fi
-  fi
-done
-# Add only new files; refuse modifications to any existing tracked or untracked destination path.
-while IFS= read -r -d '' src; do
-  rel="${src#"$ROOT"/}"; [[ "$rel" == bin/deploy.sh ]] || true
-  if [[ -e "$DEST/$rel" ]]; then
-    if ! cmp -s "$src" "$DEST/$rel"; then
-      case "$rel" in README.md|app/index.html|bin/deploy.sh|docs/CHANGELOG.md|data/atlas.json) ;; *) echo "Collision: $rel (refusing overwrite)"; exit 1;; esac
-    fi
-  fi
+for c in git gh python3; do command -v "$c" >/dev/null || { echo "Missing $c"; exit 1; }; done
+gh auth status >/dev/null || { echo 'Authenticate gh first'; exit 1; }
+python3 "$ROOT/tests/validate_v030.py" "$ROOT"
+[[ -d "$DEST/.git" ]] || { echo "Expected existing repository at $DEST; refusing to initialize over unknown state"; exit 1; }
+[[ -z "$(git -C "$DEST" status --porcelain)" ]] || { echo 'Dirty working tree: abort'; exit 1; }
+git -C "$DEST" fetch origin --tags
+[[ "$(git -C "$DEST" branch --show-current)" == main ]] || { echo 'Expected main branch'; exit 1; }
+[[ "$(git -C "$DEST" rev-parse HEAD)" == "$(git -C "$DEST" rev-parse origin/main)" ]] || { echo 'Local/remote divergence: abort'; exit 1; }
+if git -C "$DEST" rev-parse -q --verify "refs/tags/$VERSION" >/dev/null || gh release view "$VERSION" -R "$REPO" >/dev/null 2>&1; then echo 'Release already exists; abort'; exit 1; fi
+# Preflight every conflicting file against exact previous release baseline.
+while IFS= read -r -d '' f; do
+ rel="${f#"$ROOT"/}"
+ if [[ -f "$DEST/$rel" ]] && ! cmp -s "$f" "$DEST/$rel"; then
+   if [[ ! -f "$ROOT/legacy/v0.2.1/$rel" ]] || ! cmp -s "$DEST/$rel" "$ROOT/legacy/v0.2.1/$rel"; then
+     echo "Collision: $rel (not matching v0.2.1 baseline); abort"; exit 1
+   fi
+ fi
 done < <(find "$ROOT" -type f -print0)
-while IFS= read -r -d '' src; do
-  rel="${src#"$ROOT"/}"; mkdir -p "$(dirname "$DEST/$rel")"; if [[ -e "$DEST/$rel" ]] && ! cmp -s "$src" "$DEST/$rel"; then
-    case "$rel" in README.md|app/index.html|bin/deploy.sh|docs/CHANGELOG.md|data/atlas.json) cp "$src" "$DEST/$rel" ;; esac
-  elif [[ ! -e "$DEST/$rel" ]]; then cp "$src" "$DEST/$rel"; fi
+backup="$DEST/.atlas-backup-$VERSION-$(date +%Y%m%d%H%M%S)"
+mkdir -p "$backup"
+while IFS= read -r -d '' f; do
+ rel="${f#"$ROOT"/}"
+ if [[ -f "$DEST/$rel" ]] && ! cmp -s "$f" "$DEST/$rel"; then mkdir -p "$backup/$(dirname "$rel")"; cp "$DEST/$rel" "$backup/$rel"; fi
+ mkdir -p "$DEST/$(dirname "$rel")"; cp "$f" "$DEST/$rel"
 done < <(find "$ROOT" -type f -print0)
-python3 "$DEST/tests/validate_v021.py" "$DEST"
-git -C "$DEST" add .
-if ! git -C "$DEST" diff --cached --quiet; then git -C "$DEST" commit -m "release: Native Nations Atlas $VERSION"; fi
+python3 "$DEST/tests/validate_v030.py" "$DEST"
+git -C "$DEST" add README.md app data docs tests legacy bin
+if git -C "$DEST" diff --cached --quiet; then echo 'No changes to release'; exit 1; fi
+git -C "$DEST" commit -m "release: Native Nations Atlas $VERSION"
 git -C "$DEST" tag -a "$VERSION" -m "Native Nations Atlas $VERSION"
-git -C "$DEST" push -u origin HEAD:main
+git -C "$DEST" push origin main
 git -C "$DEST" push origin "$VERSION"
-gh release create "$VERSION" "$ROOT/../native-nations-atlas-v0.2.1.zip" --repo "$REPO" --title "Native Nations Atlas $VERSION" --notes-file "$ROOT/docs/CHANGELOG.md" 2>/dev/null || gh release create "$VERSION" --repo "$REPO" --title "Native Nations Atlas $VERSION" --notes-file "$ROOT/docs/CHANGELOG.md"
-gh release view "$VERSION" --repo "$REPO" --json url,tagName
-[[ "$(git -C "$DEST" ls-remote --tags origin "refs/tags/$VERSION" | wc -l | tr -d ' ')" == 1 ]]
-echo "Verified: $REPO $VERSION"
+zip="$ROOT/../native-nations-atlas-v0.3.0.zip"
+if [[ -f "$zip" ]]; then gh release create "$VERSION" "$zip" -R "$REPO" --title "Native Nations Atlas $VERSION" --notes-file "$ROOT/docs/CHANGELOG.md"; else gh release create "$VERSION" -R "$REPO" --title "Native Nations Atlas $VERSION" --notes-file "$ROOT/docs/CHANGELOG.md"; fi
+gh release view "$VERSION" -R "$REPO" --json url,tagName
+[[ -n "$(git -C "$DEST" ls-remote --tags origin "refs/tags/$VERSION")" ]]
+echo "Verified $REPO $VERSION"

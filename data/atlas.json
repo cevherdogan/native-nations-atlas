@@ -1,6 +1,6 @@
 {
-  "version": "0.2.1",
-  "status": "regional taxonomy only; no nation profiles verified",
+  "version": "0.3.0",
+  "status": "navigable research scaffolds; not verified nation directory",
   "regions": [
     {
       "id": "1",
@@ -73,5 +73,21 @@
     "Research provenance & corrections"
   ],
   "nations": [],
-  "sources": []
+  "sources": [],
+  "resource_types": [
+    "nation",
+    "region",
+    "language",
+    "community",
+    "museum",
+    "event",
+    "land",
+    "art",
+    "music",
+    "spirituality",
+    "foodway",
+    "history",
+    "governance",
+    "source"
+  ]
 }
