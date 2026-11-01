@@ -1,23 +1,18 @@
-# Native Nations Atlas · v0.1.0
+# Native Nations Atlas · v0.2.0
 
-A mobile-first, community-respectful atlas of Native American / American Indian / Alaska Native nations and communities, with future extensions for Indigenous peoples across the Americas subject to distinct local naming and governance.
+Pan-American scope: Alaska, Canada, the United States, Mexico, Central America, the Caribbean and South America. Includes living Indigenous peoples and communities; geographic sections are navigation aids rather than assertions of identity or borders.
 
-## Scope
-Nations and sovereignty; homelands, land and treaties; living villages and public visitor guidance; museums; public events; languages and dialects; publicly shared spiritual traditions; arts, adornment, music, foodways, ecology, historical sources and contemporary community initiatives.
+## Preview
+Open `app/index.html` locally; no server or external libraries needed. Search and switch between nine geographic frameworks and thirteen cultural themes. The current release intentionally does not fabricate verified nation, museum or event listings.
 
-## Source and cultural safeguards
-- Tribal government and community-authored sources take priority; clearly mark external sources.
-- Distinguish historical and present-day geographies; never infer exact boundaries from generalized maps.
-- Respect public/private boundaries for ceremonies, sacred places, oral knowledge and personal data.
-- Use community-preferred names, and provide a correction and removal process.
-- No scraped copyrighted media, unlicensed audio, or unverified event dates.
-- Track record-level source URL, publisher, access date, evidence status, permissions and last review.
+## Deployment
+Extract the ZIP and run `bash bin/deploy.sh` on a Mac with `git`, `gh`, Python 3 and authenticated GitHub CLI. Optional `ATLAS_REPO`, `ATLAS_DEST`, `ATLAS_VISIBILITY`. Default repository `cevherdogan/native-nations-atlas`; default checkout `~/github/native-nations-atlas`. Existing files are never silently overwritten. Previous starter files are preserved under `legacy/v0.1.0/`.
 
-## Deploy
-On a Mac with git and GitHub CLI (`gh`) installed and authenticated, unzip this package and run `bash bin/deploy.sh`. Optionally set `ATLAS_REPO=owner/repository` and `ATLAS_DEST=/path/to/checkout`. The script creates a **public** GitHub repository if it does not exist; set `ATLAS_VISIBILITY=private` for private. Existing working trees with changes are not overwritten; deploy refuses to proceed. Existing tags are not replaced. Release publication requires `gh` authentication.
+## Integrity and safety
+- Source-led, community-preferred naming, public permissions and correction requests.
+- Never infer Indigenous identity from geography or government recognition.
+- No precise sacred locations, private ceremonies, unlicensed media or invented event dates.
+- All future nation records must include provenance, review date, evidence status and community attribution.
 
-## Local preview
-Open `app/index.html` in a browser. No backend required.
-
-## Roadmap
-v0.2: nation records, source ledger, verified links; v0.3: public event feeds and museums; v0.4: languages and culturally reviewed exhibits; v0.5: map with appropriate geographic precision and permissions.
+## Scope limitations
+The atlas is a structured research starter, not a completed directory. GitHub publication requires user-side authenticated CLI access.

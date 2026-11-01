@@ -1,0 +1,77 @@
+{
+  "version": "0.2.0",
+  "status": "regional taxonomy only; no nation profiles verified",
+  "regions": [
+    {
+      "id": "1",
+      "name": "Arctic & Subarctic",
+      "description": "Alaska, northern Canada, Greenland (geographic context)",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "2",
+      "name": "Canada",
+      "description": "First Nations, Inuit, Métis and distinct communities",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "3",
+      "name": "United States",
+      "description": "Tribal nations, Alaska Native communities and Native Hawaiian distinction",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "4",
+      "name": "Mexico",
+      "description": "Indigenous nations and communities across Mexico",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "5",
+      "name": "Central America",
+      "description": "Belize, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "6",
+      "name": "Caribbean",
+      "description": "Indigenous continuity and diasporas across the Caribbean",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "7",
+      "name": "Andean South America",
+      "description": "Colombia, Ecuador, Peru, Bolivia, Chile, Argentina",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "8",
+      "name": "Amazonia & Guianas",
+      "description": "Amazon basin, Brazil, Venezuela, Guyana, Suriname, French Guiana",
+      "record_status": "taxonomy"
+    },
+    {
+      "id": "9",
+      "name": "Southern Cone",
+      "description": "Paraguay, Uruguay, Argentina, Chile and neighboring territories",
+      "record_status": "taxonomy"
+    }
+  ],
+  "modules": [
+    "Nations & living communities",
+    "Land, territories & treaties",
+    "Villages & public access",
+    "Museums & cultural centers",
+    "Public events & calendars",
+    "Languages, varieties & dialects",
+    "Public spirituality & worldviews",
+    "Art, adornment & regalia",
+    "Music & oral traditions",
+    "Foodways & ecology",
+    "History & primary sources",
+    "Governance & self-determination",
+    "Research provenance & corrections"
+  ],
+  "nations": [],
+  "sources": []
+}
